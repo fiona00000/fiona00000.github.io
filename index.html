@@ -86,9 +86,6 @@
               >Tableau</a
             >
           </li>
-          <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-          <!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
         </ul>
       </div>
     </div>
@@ -123,52 +120,63 @@
           <div class="row-12">
             <h3>Web Development</h3>
             <div class="col-12-mobile">
+              <!-- 1 -->
               <article class="item">
                 <a href="https://my-demo-blog.cyclic.cloud/blog ">
                   <img src="./images/DemoBlog.jpg" width="479" height="229" />
-                  <header>
-					Demo blog</a
-                	>(Express, Bootstrap, Post)
-				  </header>
+                  <header>Demo blog (Express, Bootstrap, Post)</header>
+                </a>
 
+                <!-- 2 -->
                 <a href="https://phonebook-backend-86eu.onrender.com/">
                   <img
                     src="./images/DemoPhoneBook.jpg"
                     width="365"
                     height="375"
                   />
-				  <header>
- 					Demo phonebook </a
-                	>(React + Vite, Bootstrap Express, MongoDB)
-				  </header>
-                 
+                  <header>
+                    Demo phonebook (React + Vite, Bootstrap Express, MongoDB)
+                  </header>
+                </a>
+                <p></p>
+                <!-- 3 -->
+                <a href="./views/React Practice/react.html">
+                  <header>Single Page React Practices (React)</header>
+                </a>
               </article>
             </div>
 
             <h3>Bussiness Analysis Dashboard</h3>
             <div class="col-6 col-12-mobile">
+              <!-- 1 -->
               <article class="item">
                 <a
                   href="https://public.tableau.com/views/Pre-InterviewTask_Feb_2022/MonitoringDashboard?:language=en-US&:display_count=n&:origin=viz_share_link"
-                  ><img
+                >
+                  <img
                     src="./images/Dahsboard_1.jpg"
                     alt="Dashboard 1"
                     width="417"
                     height="265"
-                /></a>
+                  />
+                </a>
                 <header>
                   <h3>Sample_Bussiness_Monitoring_Dashboard_Feb_2022</h3>
                 </header>
               </article>
+
+              <!-- 2 -->
               <article class="item">
                 <a
                   href="https://public.tableau.com/views/DA_Computer_Test_Feb_2022/OrderAnalysisDashboard?:language=en-US&:display_count=n&:origin=viz_share_link"
-                  ><img
+                >
+                  <img
                     src="./images/Dashboard_2.jpg"
                     alt="Dashbaord 2"
                     width="579"
                     height="256"
-                /></a>
+                  />
+                </a>
                 <header>
                   <h3>Order_Analysis_Dashboard_Feb_2022</h3>
                 </header>
@@ -178,9 +186,16 @@
             <h3>Study Notes</h3>
             <div class="col-12-mobile">
               <article class="item">
-                <a href="https://hackmd.io/@fional/LinuxCMD"
-                  >Basic Linux Command</a
-                >
+                <li>
+                  <a href="https://hackmd.io/@fional/LinuxCMD"
+                    >Basic Linux Command</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/fiona00000/CSS-practice/tree/main"
+                    >CSS practice</a
+                  >
+                </li>
               </article>
             </div>
           </div>
@@ -193,7 +208,7 @@
           <header>
             <h2>About Me</h2>
           </header>
-          <!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
           <p>
             Currently a student in Seneca College studying in Computer
             Programming.
@@ -225,16 +240,28 @@
             action="mailto:fionaloy@protonmail.com"
             method="post"
             enctype="text/plain"
+            name="emailMessage"
           >
             <div class="row">
               <div class="col-6 col-12-mobile">
-                <input type="text" name="name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Please enter your Name"
+                />
               </div>
               <div class="col-6 col-12-mobile">
-                <input type="text" name="email" placeholder="Email" />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Please enter your Email"
+                />
               </div>
               <div class="col-12">
-                <textarea name="message" placeholder="Message"></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Message to Fiona :)"
+                ></textarea>
               </div>
               <div class="col-12">
                 <input type="submit" value="Send Message" />
@@ -262,5 +289,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   </body>
 </html>
