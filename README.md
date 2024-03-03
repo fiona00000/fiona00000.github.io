@@ -17,7 +17,10 @@ Mar 03 2024
 ## History Versions
 V1.0.0
 Jan 27 2024
-Template: Utilizing a pre-designed template as a starting point. (sourced from [HTML 5](http://html5up.net/))
-Portfolio: Successfully completed and integrated the portfolio section
-Contact Form: In development, the contact form will be operational soon
+- Template: 
+	- Utilizing a pre-designed template as a starting point. (sourced from [HTML 5](http://html5up.net/))
+- Portfolio: 
+	- Successfully completed and integrated the portfolio section
+- Contact Form: 
+	- In development, the contact form will be operational soon
 
