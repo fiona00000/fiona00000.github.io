@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Change State Practice</title>
+    <link rel="stylesheet" href="../../assets/css/changeState.css" />
+    <!-- Load Babel and React. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      window.onload = function () {
+        const { useState } = React;
+        function State() {
+          const [state, setState] = useState(true);
+
+          function handleClick() {
+            setState((state) => !state);
+          }
+
+          return (
+            <div className="state">
+              <h1 className="state--title">Click the button to change word:</h1>
+              <div className="state--value" onClick={handleClick}>
+                <h1>{state === true ? "Hello" : "  :)  "}</h1>
+              </div>
+            </div>
+          );
+        }
+        function Note() {
+          return (
+            <div>
+              <p>
+                Tutorial from:{" "}
+                <a href="https://scrimba.com/learn/learnreact/usestate-counter-practice-co1f54adba032538022373b97">
+                  Scrimba
+                </a>
+              </p>
+              <button
+                className="button--back"
+                onClick={() => window.history.back()}
+              >
+                Back
+              </button>
+            </div>
+          );
+        }
+
+        function App() {
+          return (
+            <div>
+              <State />
+              <Note />
+            </div>
+          );
+        }
+
+        ReactDOM.render(<App />, document.getElementById("root"));
+      };
+    </script>
+  </body>
+</html>

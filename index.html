@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fiona Leung's Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img
+                        src="./media/images/fiona_text.png"
+                        alt=""
+                        class="logo"
+                    />
+                    <ul id="menu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-ellipsis" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Developer</p>
+                    <h1>Hello,<br />I'm <span>Fiona Leung</span> :)</h1>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------ about ------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./media/images/github_logo.png" alt="" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Graduated from Seneca College studying in Computer
+                            Programming.
+                        </p>
+                        <p>
+                            A programmer with industry experience with an
+                            engineering degree, and a strong foundation in
+                            computer programming through ongoing studies. I am
+                            eager to apply my programming skills,
+                            problem-solving abilities, and collaborative mindset
+                            to deliver innovative solutions and exceed
+                            expectations. I am committed to continuous growth
+                            and development, and I am confident that my
+                            abilities and potential make me a valuable asset to
+                            the team.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p
+                                class="tab-links active-link"
+                                onclick="opentab('skill')"
+                            >
+                                Skills
+                            </p>
+                            <p
+                                class="tab-links"
+                                onclick="opentab('experience')"
+                            >
+                                Experience
+                            </p>
+                            <p class="tab-links" onclick="opentab('education')">
+                                Education
+                            </p>
+                        </div>
+                        <!-- skill -->
+                        <div class="tab-contents active-tab" id="skill">
+                            <ul>
+                                <li>
+                                    <span>Web Development</span><br />Web App
+                                    Development
+                                </li>
+                                <li>
+                                    <span>UI/UX</span><br />Designing Web/App
+                                    interfaces
+                                </li>
+                                <li>
+                                    <span>Data Analytics</span><br />Analysing
+                                    Data
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- experience -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>2023</span><br />Lab Assistant at
+                                    Seneca College
+                                </li>
+                                <li>
+                                    <span>2021-2022</span><br />Programmer at
+                                    Matilda International Hospital
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- education -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>2022-2023</span>
+                                    <br />Diploma of Computer Programming
+                                </li>
+                                <li>
+                                    <span>2016-2020</span><br />B.Eng
+                                    Engineering
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------ services ------------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Customize Webpage design</p>
+                        <a href="./views/Comming Soon/CommingSoon.html"
+                            >Learn More</a
+                        >
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Customize UI/UX design</p>
+                        <a href="./views/Comming Soon/CommingSoon.html"
+                            >Learn More</a
+                        >
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Customize App design</p>
+                        <a href="./views/Comming Soon/CommingSoon.html"
+                            >Learn More</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------ portfolio ------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./media/images/Interface_Practice.jpg" />
+                        <div class="layer">
+                            <h3>HTML CSS JavaScript Interface Demo</h3>
+                            <p>General website interface demo</p>
+                            <a href="./views/Interface Practice/index.html"
+                                ><i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                ></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./media/images/DemoBlog.jpg" alt="" />
+                        <div class="layer">
+                            <h3>Demo blog (Express, Bootstrap, Post)</h3>
+                            <p>Blog demo connected with database</p>
+                            <a href="https://my-demo-blog.cyclic.cloud/blog"
+                                ><i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                ></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./media/images/DemoPhoneBook.jpg" alt="" />
+                        <div class="layer">
+                            <h3>
+                                Demo phonebook (React + Vite, Bootstrap Express,
+                                MongoDB)
+                            </h3>
+                            <p>Phonebook demo for React practice</p>
+                            <a
+                                href="https://phonebook-backend-86eu.onrender.com/"
+                                ><i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                ></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/fiona00000" class="btn"
+                    >See more (GitHub)</a
+                >
+            </div>
+        </div>
+
+        <!------------------------ portfolio ------------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-paper-plane"></i>&nbsp;
+                            fionaloy@protonmail.com
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/fionaloy"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                            <a href="https://github.com/fiona00000"
+                                ><i class="fa-brands fa-square-github"></i
+                            ></a>
+                            <a href="fionaloy@protonmail.com"
+                                ><i class="fa-solid fa-envelope"></i
+                            ></a>
+                            <a
+                                href="https://public.tableau.com/app/profile/fionalll"
+                                >Tableau</a
+                            >
+                        </div>
+                        <a
+                            href="./media/RESUME_FionaLeung.pdf"
+                            download
+                            class="btn btn2"
+                            >Download CV</a
+                        >
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input
+                                type="text"
+                                name="Name"
+                                placeholder="Your Name"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="Email"
+                                placeholder="Your Email"
+                                required
+                            />
+                            <textarea
+                                name="Message"
+                                rows="6"
+                                placeholder="Message to Fiona :)"
+                            ></textarea>
+                            <button type="submit" class="btn btn2">
+                                Submit
+                            </button>
+                        </form>
+                        <span id="success"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    Fiona Leung's Portfolio website v2.0.0
+                    <i
+                        class="fa-regular fa-face-laugh-squint fa-shake"
+                        style="color: #ffd43b"
+                    ></i>
+                </p>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

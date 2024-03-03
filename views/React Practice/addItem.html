@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Item List</title>
+    <link rel="stylesheet" href="../../assets/css/addItem.css" />
+    <!-- Load Babel and React. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      window.onload = function () {
+        const { useState } = React;
+        function App() {
+          const [array, setArray] = React.useState(["Item 1", "Item 2"]);
+
+          function addItem() {
+            setArray((prevArray) => {
+              return [...prevArray, `Item ${prevArray.length + 1}`];
+            });
+          }
+
+          const arrayElements = array.map((item) => <p key={item}>{item}</p>);
+
+          return (
+            <div>
+              <button onClick={addItem}>Add Item</button>
+              {arrayElements}
+            </div>
+          );
+        }
+
+        ReactDOM.render(<App />, document.getElementById("root"));
+      };
+    </script>
+  </body>
+</html>
