@@ -1,0 +1,36 @@
+.coming-soon-container {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 15% 0;
+}
+
+.coming-soon-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.coming-soon-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.coming-soon-container .btn{
+    background-color: #497DBB;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.coming-soon-container .btn:hover {
+    background-color: #345E8D;
+}
