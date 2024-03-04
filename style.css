@@ -166,6 +166,97 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* ------------------------ portfolio ------------------------ */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 3%;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #497DBB);
+    border-radius: 5%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.2s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #497DBB;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    background: #497DBB;
+    border: 1px solid #497DBB;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #497DBB;
+}
+
 /* ------------------------ services ------------------------ */
 .services{
     padding: 30px 0;
@@ -179,7 +270,8 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-    background: #262626;
+    background: #6b96ca;
+    color: #fff;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -208,99 +300,8 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #6b96ca;
+    background: #6495ed;
     transform: translateY(-10px);
-}
-
-/* ------------------------ portfolio ------------------------ */
-#portfolio{
-    padding: 50px 0;
-}
-
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work{
-    border-radius: 5%;
-    position: relative;
-    overflow: hidden;
-}
-
-.work img{
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-    border-radius: 3%;
-    display: block;
-    transition: transform 0.2s;
-}
-
-.layer{
-    width: 100%;
-    height: 0%;
-    color: #fff;
-    background: linear-gradient(rgba(250,250,250,0.6), #497DBB);
-    border-radius: 5%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.2s;
-}
-
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.layer a{
-    margin-top: 20px;
-    color: #497DBB;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.work:hover .layer {
-    height: 100%;
-}
-
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    background: #497DBB;
-    border: 1px solid #497DBB;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.2s, color 0.2s;
-}
-
-.btn:hover{
-    background: transparent;
-    color: #497DBB;
 }
 
 /* ------------------------ contact ------------------------ */
@@ -366,13 +367,16 @@ form .btn2{
     cursor: pointer;
 }
 
+/* ------------------------ footer ------------------------ */
 .footer{
+    position: fixed;
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 0.5rem 0;
     background-color: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    bottom: 0;
+    height: 1.5rem;
 }
 
 /* ------------------------ css for small screens ------------------------ */
@@ -503,5 +507,10 @@ nav .fa-solid{
 
 /* ------------------------ Portfoilo Page ------------------------ */
 .work-title{
-    margin: 20px 0 -40px;
+    margin: 20px 0 -40px 0;
+}
+
+.see-more{
+    min-height: auto; 
+    margin-top: 100px;
 }
